@@ -1,0 +1,119 @@
+.slider-box {
+    max-width: 70%;
+    margin: 0 auto;
+    display: flex;
+    gap: 5rem;
+    padding: 0 1rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12rem;
+}
+
+.slider-box .slider-info {
+    align-self: stretch;
+    flex: 1;
+    margin: auto;
+}
+
+.slider-box .slider-info .slider-logo {
+    width: 20rem;
+    margin-bottom: 2rem;
+}
+
+.slider-box .slider-info img {
+    width: 100%;
+}
+
+.slider-box .slider-info .para {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.slider-info>p {
+    font-size: 2rem;
+    color: #00baf2;
+    cursor: pointer;
+}
+
+.slider-info>p:hover {
+    color: black;
+}
+
+.slider-box .slider {
+    display: flex;
+    gap: 2rem;
+    align-self: stretch;
+    overflow-x: scroll;
+    width: 80%;
+}
+
+.slider-box .slider::-webkit-scrollbar {
+    display: none;
+}
+
+.slider-box .slider>div {
+    background-color: #00baf2;
+    cursor: pointer;
+    opacity: .8;
+    border-radius: 1rem;
+}
+
+.slider-box .slider>div:hover {
+    opacity: 1;
+}
+
+.slider-box .slider div:hover .slider-img img {
+    scale: 1.1;
+}
+
+.slider-box .slider div p {
+    font-size: 2rem;
+    color: white;
+    font-weight: 700;
+    padding: 1rem 3rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.slider-box .slider .slider-img {
+    min-width: 17rem;
+    overflow: hidden;
+    border: 6px solid #00baf2;
+    border-radius: 2rem;
+
+}
+
+.slider-box .slider .slider-img img {
+    transition: .3s;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.second-slider .slider-box .slider-img img {
+    width: 50%;
+}
+
+.second-slider .slider-box .slider div p {
+    padding: 1rem 0;
+    text-align: left;
+    padding: 1rem;
+}
+.second-slider .slider-box .slider div:hover .slider-img img {
+    scale: 1;
+}
+.second-slider .slider-box .slider>div{
+    padding: 1rem;
+}
+@media only screen and (max-width:1350px){
+    .slider-box {
+        max-width:100%;
+        flex-direction: column;
+    }
+    .slider-box .slider-info {
+        padding: 2rem;
+    }
+    .slider-box .slider {
+        padding: 2rem;
+        width: 100%;
+    }
+}

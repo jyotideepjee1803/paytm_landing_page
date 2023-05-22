@@ -1,0 +1,112 @@
+.iconComp {
+    width: 100%;
+    padding: 3% 0;
+}
+
+.iconComp h1 {
+    text-align: center;
+    font-size: 4.5rem;
+    font-weight: 600;
+    color: white;
+    text-align: left;
+    margin-left: 9%;
+}
+
+.iconComp .icon-slide {
+    padding: 0 7%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-top: 3rem;
+    min-height: 17rem;
+}
+
+.icon-slide>div {
+    border-radius: 2.2rem;
+    max-width: 17rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    cursor: pointer;
+    transition: .3s;
+    padding: 1rem;
+}
+
+.icon-slide .two:hover{
+    background-color: #0e3e71;
+}
+
+.icon-slide .one:hover{
+    background-color: #00aade;
+}
+.icon-slide div img {
+    width: 7rem;
+}
+
+.icon-slide div p {
+    color: white;
+    font-size: 1.8rem;
+    text-align: left;
+    font-weight: 600;
+    width: 50%;
+    padding-left: 2rem;
+}
+
+@media only screen and (max-width:1180px) {
+    html {
+        font-size: 58%;
+    }
+
+    .iconComp {
+        padding: 1rem;
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    .iconComp .icon-slide {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 2;
+    }
+
+    .icon-slide>div {
+        max-width: 25rem;
+        flex-direction: row;
+        margin: 1rem;
+        gap: .5rem;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width:750px) {
+    html {
+        font-size: 50%;
+    }
+
+    .iconComp .icon-slide {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 3;
+        padding: 1rem 1%;
+    }
+
+    .icon-slide>div {
+        gap: 0;
+        padding: 1rem;
+    }
+
+}
+
+@media only screen and (max-width:450px) {
+
+    .iconComp .icon-slide {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        place-items: center;
+    }
+
+    .icon-slide>div {
+        width: 25rem;
+        gap: 1rem;
+    }
+
+
+}

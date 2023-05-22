@@ -1,0 +1,133 @@
+.Main-card {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8rem 0;
+    box-shadow: 0px -1px 50px 0px rgba(128, 128, 128, 0.2);
+    margin: 0 auto;
+}
+
+.MainCard-content {
+    width: 50%;
+    padding: 2rem 10rem;
+    margin-left: 7rem;
+}
+
+.MainCard-content .card-logo {
+    width: 8rem;
+    margin-bottom: 2rem;
+}
+
+.MainCard-content .card-logo img {
+    width: 100%;
+}
+
+.MainCard-content .card-text h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 6rem;
+    margin-bottom: 2rem;
+}
+
+.MainCard-content .card-text p {
+    font-size: 2.5rem;
+    padding-right: 2rem;
+}
+
+.MainCard-content button {
+    margin-top: 5rem;
+    font-size: 2rem;
+    padding: 1.2rem 3rem;
+    border-radius: 2.5rem;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.MainCard-content button:hover {
+    background-color: white;
+    color: black;
+}
+
+.MainCard-content button .fab {
+    color: white;
+    font-size: 2rem;
+    margin: 0 5px;
+    transition: .3s;
+}
+
+.MainCard-content button:hover .fab {
+    color: black;
+}
+
+.MainCard-content button .fa-google-play {
+    font-size: 1.7rem;
+}
+
+.MainCard-img {
+    width: 50rem;
+    padding: 1rem 0;
+}
+
+.MainCard-img img {
+    width: 100%;
+}
+
+@media only screen and (max-width:1180px) {
+    html {
+        font-size: 60%;
+    }
+
+    .Main-card {
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .MainCard-content {
+        width: 100%;
+        text-align: left;
+        margin-left: 5rem;
+    }
+
+
+}
+
+@media only screen and (max-width:700px) {
+    html {
+        font-size: 50%;
+    }
+
+    .Main-card {
+        padding: 1rem 1rem;
+    }
+
+    .MainCard-content {
+        width: 100%;
+        padding: 1rem 2rem;
+        margin-left: 3rem;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    html {
+        font-size: 45%;
+    }
+
+    .Main-card {
+        padding: 1rem;
+    }
+
+    .MainCard-content {
+        width: 100%;
+        padding: 1rem;
+        margin-left: 1rem;
+    }
+
+    .MainCard-img {
+        padding: 3rem 0;
+        align-self: flex-end;
+    }
+}

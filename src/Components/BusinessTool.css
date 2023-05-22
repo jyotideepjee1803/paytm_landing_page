@@ -1,0 +1,74 @@
+.BusinessTool {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem 3rem;
+    text-align: left;
+}
+
+.BusinessTool .tool-img {
+    width: 25rem;
+}
+
+.BusinessTool .tool-img img {
+    width: 100%;
+}
+
+.BusinessTool .tool-head {
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.BusinessTool .tool-para {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.tool-btn {
+    width: 100%;
+}
+
+.tool-btn button {
+    border: none;
+    font-size: 1.8rem;
+    font-weight: 700;
+    background-color: white;
+    padding: 1rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.tool-btn .fas {
+    font-size: 1.5rem;
+    margin-left: .8rem;
+    position: relative;
+    right: 25%;
+    display: none;
+}
+
+.tool-btn button:hover .fas {
+    right: 0;
+    display: inline-block;
+}
+
+@media only screen and (max-width:1000px) {
+    .BusinessTool {
+        padding: 1rem 1rem; 
+    }
+}
+@media only screen and (max-width:550px) {
+    .BusinessTool{
+        width: 100%;
+        padding:2rem;
+        text-align: center;
+    }
+    .BusinessTool .tool-img {
+        width: 25rem;
+        padding: 1rem;
+        margin-left: 1rem;
+    }
+  }

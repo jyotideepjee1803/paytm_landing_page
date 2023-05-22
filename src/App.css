@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: calibri;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+#App {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --bg: #00baf2;
+  --darkbg: #0f4a8a;
+  --light: #f6f6f6;
+}
+.Main-card{
+  display: flex;
+  flex-direction: column;
+}
+
+.Main-head #kyc{
+  font-weight: 500;
+  text-align: center;
+  padding: 1.7rem 1rem;
+}
+
+.home-page {
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.instruments-container {
+  background-color: #f4fcff;
+  padding: 12rem;
+}
+
+@media only screen and (max-width:950px) {
+  .instruments-container {
+    padding: 2rem;
+  }
+}
+
+.instruments-container h1 {
+  font-weight: 800;
+  font-size: 5.5rem;
+  margin-bottom: 4rem;
+}
+
+.finance-div {
+  padding: 0 5rem;
+  width: 100%;
+  background-color: white;
+  position: relative;
+}
+
+#finance-head {
+  font-size: 5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  margin-left: 10rem;
+  text-align: left;
+}
+
+.finance-div .Postpaid-card {
+  box-shadow: none;
+}
+
+.paytm-money {
+  width: 100%;
+  background-color: white;
+}
+
+.paytm-money .Postpaid-card {
+  box-shadow: none;
+  background: url(./Components/Images/paytmMoneybg.png) no-repeat center;
+  background-size: cover;
+  background-color: #f6f6f6;
+  border-radius: 0;
+  flex-direction: row-reverse;
+}
+
+::-webkit-scrollbar{
+  width: 6px;
+  background: var(--light);
+}
+
+::-webkit-scrollbar-thumb{
+  background: var(--bg);
+  border-radius: 6px;
+  
+}
+
+@media only screen and (max-width:900px) {
+  .paytm-money .Postpaid-card {
+    flex-direction: column;
+  }
+
+  .paytm-money .PostpaidCard-content {
+    width: 100%;
+    padding: 1rem 0;
+    margin-left: 1rem;
+  }
+
+  .paytm-money .PostpaidCard-img {
+    width: 40rem;
+    padding: 2rem;
+  }
+}
+
+.paytm-insurance {
+  width: 100%;
+  background-color: white;
+  padding: 0 3rem;
+}
+
+.paytm-insurance .Postpaid-card {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.personal-loan {
+  width: 100%;
+  background-color: white;
+}
+
+.personal-loan .Postpaid-card {
+  flex-direction: row-reverse;
+  background-color: rgba(240, 248, 255, 0.8);
+  border-radius: 0;
+  box-shadow: none;
+  padding: 8rem 8rem;
+}
+
+@media only screen and (max-width:900px) {
+  .personal-loan .Postpaid-card {
+    flex-direction: column;
+  }
+
+  .personal-loan .PostpaidCard-content {
+    width: 100%;
+    padding: 1rem 0;
+    margin-left: 1rem;
+  }
+
+  .personal-loan .PostpaidCard-img {
+    width: 40rem;
+    padding: 2rem;
+  }
+}
+
+.business-services {
+  background-color: white;
+  padding: 5rem 15rem;
+}
+
+@media only screen and (max-width:1200px) {
+  .business-services {
+    padding: 2rem;
+  }
+
+  .business-services .Postpaid-card {
+    padding: 1rem;
+  }
+}
+
+.business-services .Postpaid-card {
+  box-shadow: none;
+  background-color: rgba(240, 248, 255, 0.8);
+  margin-bottom: 5rem;
+}
+
+.business-tool {
+  padding: 2rem;
+  margin-bottom: 10rem;
+}
+
+#business-head {
+  font-size: 5rem;
+  font-weight: 600;
+  margin-left: 10rem;
+  text-align: left;
+}
+
+.business-tool>div {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+  grid-template-rows: 1;
+  grid-row: auto;
+  margin: auto;
+}
+
+.business-tool h1 {
+  font-size: 4.5rem;
+  margin-bottom: 4rem;
+  padding-right: 1rem;
+}
+
+@media only screen and (max-width:1300px) {
+  .business-tool h1 {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+    text-align: left;
+  }
+
+  .business-tool>div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width:550px) {
+  .business-tool>div {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.home-page .last {
+  width: 100%;
+  background: #00baf2;
+  padding: .6rem;
+}
+
+.home-page .second-last {
+  width: 100%;
+  background: #002970;
+  padding: .6rem;
+}
+
+@media only screen and (max-width:600px) {
+  #business-head {
+    font-size: 4rem;
+    margin-left: 2rem;
+  }
+
+  #finance-head {
+    font-size: 4rem;
+    margin-left: 2rem;
+  }
+
+}
